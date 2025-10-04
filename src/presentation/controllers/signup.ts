@@ -2,9 +2,7 @@ export class SignUpController {
     handle(httpRequest: any): any {
         return {
             statusCode: 400,
-            body: {
-                name: 'Daniel'
-            }
+            body: new Error('Missing param: name')
         }
     }
 }
